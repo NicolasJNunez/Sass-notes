@@ -1,0 +1,39 @@
+.header__contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0a2;
+}
+
+.header__title {
+  color: rgb(213, 113, 154);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.header__imagen {
+  width: 300px;
+}
+
+.header__nav {
+  position: absolute;
+  top: 70px;
+  right: 125px;
+  background-color: rgb(168, 195, 225);
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 1em;
+  border-radius: 30px;
+  box-shadow: 1px 1px 3px rgb(0, 0, 0);
+  text-shadow: 0.5px 0.5px 1px #000;
+  transition: 0.3s ease;
+}
+
+.header__nav:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(168, 195, 225);
+  text-shadow: 0.5px 0.5px 1px #00000073;
+}
+
+.header__nav:active {
+  box-shadow: none;
+}

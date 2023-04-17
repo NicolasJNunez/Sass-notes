@@ -1,0 +1,101 @@
+a {
+  color: #000000;
+  color: #fff;
+}
+
+p {
+  background-color: #f0f0f093;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+hr {
+  color: rgb(168, 195, 225);
+}
+
+.seccion {
+  padding: 75px 200px;
+  color: rgb(213, 113, 154);
+}
+
+.seccion__titulo {
+  text-decoration: underline;
+  font-size: 1.75rem;
+}
+
+.seccion__articulo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.seccion__articulo-titulo {
+  font-size: 1.35rem;
+  padding: 5px;
+}
+
+.seccion__articulo-titulo--contiguo {
+  margin-top: 20px;
+}
+
+.seccion__articulo-parrafo {
+  font-size: 1.225rem;
+}
+
+.seccion--contigua {
+  padding: 0px 200px;
+}
+
+.contenedor-flecha-imagen {
+  display: flex;
+  justify-content: center;
+}
+
+.imagen {
+  width: 1000px;
+  box-shadow: 5px 5px 20px #000;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.imagen-pequeña {
+  width: 400px;
+  margin-top: 100px;
+  box-shadow: 5px 5px 20px #000;
+  margin-bottom: 50px;
+}
+
+.flecha {
+  width: 300px;
+  height: 300px;
+}
+
+.flecha-pequeña {
+  height: 200px;
+}
+
+.iconoflecha {
+  width: 60px;
+  position: sticky;
+  bottom: 30px;
+  left: 93.5%;
+  margin: 20px;
+  transition: 0.3s ease;
+}
+
+.iconoflecha:hover {
+width: 65px;
+}
+
+.contenedor-video {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.video {
+  width: 900px;
+
+}

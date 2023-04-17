@@ -1,0 +1,44 @@
+.card {
+  width: 350px;
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    background-color: $color-primario;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+
+  &__body {
+    padding: 1.5em;
+    background-color: #f0f0f062;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-end-end-radius: 30px;
+    border-end-start-radius: 30px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    padding: .3em .5em;
+    background-color: $color-gris;
+    border-radius: 10px;
+    font-size: .8rem;
+
+        //  ⇩ Atención acá, es un ampersand sobre otro ampersand
+
+    &--active {
+      font-weight: 800;
+    }
+
+  }
+
+}

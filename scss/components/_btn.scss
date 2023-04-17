@@ -1,0 +1,17 @@
+.btn {
+  background-color: $color-btn;
+  color: #fff;
+  border-radius: 10px;
+  padding: .5em 1em;
+  display: inline-block;
+  margin-top: 15px;
+  transition: 0.3s ease;
+
+  //  ⇩ Atención acá, es un ampersand sobre otro ampersand
+
+  &:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(168, 195, 225);
+    border: 1px solid rgb(168, 195, 225);
+  }
+}
