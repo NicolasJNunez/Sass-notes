@@ -16,6 +16,12 @@
   }
 }
 
+@media (max-width: 1146px) {
+  span {
+    font-size: 1.1rem;
+  }
+}
+
 li {
   list-style: none;
 }

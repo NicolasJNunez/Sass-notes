@@ -65,6 +65,12 @@ font-size: 0.6rem;
   }
 }
 
+span {
+  @include desktop-1146() {
+    font-size: 1.10rem;
+  }
+}
+
 li {
   list-style: none;
 }
