@@ -45,6 +45,12 @@ $color-desactivado: #000000;
   }
 }
 
+@mixin desktop-370 {
+  @media (max-width:370px) {
+    @content
+  }
+}
+
 
 *{
   box-sizing: border-box;
@@ -58,10 +64,23 @@ $color-desactivado: #000000;
 font-size: 0.6rem;
   }
 }
-a {
-  text-decoration: none;
-}
 
 li {
   list-style: none;
+}
+
+a {
+  color: #000000;
+  color: #fff;
+  text-decoration: none;
+}
+
+p {
+  background-color: #f0f0f093;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+hr {
+  color: rgb(168, 195, 225);
 }

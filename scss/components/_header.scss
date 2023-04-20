@@ -18,6 +18,9 @@
   @include desktop-1146 () {
     width: 150px;
   }
+  @include desktop-370 () {
+    width: 125px;
+  }
 }
 
 .header__nav {
@@ -41,6 +44,9 @@
   @include desktop-494 () {
     right: 10px;
     padding: 0.5em;
+  }
+  @include desktop-370 () {
+    right: 5px;
   }
 }
 
