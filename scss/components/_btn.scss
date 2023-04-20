@@ -7,11 +7,17 @@
   margin-top: 15px;
   transition: 0.3s ease;
 
-  //  ⇩ Atención acá, es un ampersand sobre otro ampersand
-
   &:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(168, 195, 225);
     border: 1px solid rgb(168, 195, 225);
   }
+
+  // ⇩ Ejemplo de extend
+
+  &--inactivo {
+    @extend .btn;
+    background-color: $color-desactivado;
+  }
 }
+

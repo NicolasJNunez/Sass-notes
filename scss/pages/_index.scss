@@ -16,6 +16,12 @@ hr {
 .seccion {
   padding: 75px 200px;
   color: rgb(213, 113, 154);
+  @include desktop-878 () {
+    padding: 75px 50px;
+  }
+  @include desktop-494 () {
+    padding: 50px 25px;
+      }
 }
 
 .seccion__titulo {
@@ -46,11 +52,16 @@ hr {
 
 .seccion--contigua {
   padding: 0px 200px;
+  @include desktop-878 () {
+    padding: 0px 50px;
+  }
+  @include desktop-494 () {
+    padding: 0px 25px;
+      }
 }
 
 .contenedor-flecha-imagen {
-  display: flex;
-  justify-content: center;
+@include flexbox(center,)
 }
 
 .imagen {
@@ -58,6 +69,18 @@ hr {
   box-shadow: 5px 5px 20px #000;
   margin-top: 100px;
   margin-bottom: 50px;
+  @include desktop-1392() {
+    width: 700px;
+  }
+  @include desktop-1146 () {
+    margin-top: 25px;
+  }
+  @include desktop-878 () {
+    width: 400px;
+  }
+  @include desktop-494 () {
+    width: 200px;
+      }
 }
 
 .imagen-pequeña {
@@ -65,15 +88,30 @@ hr {
   margin-top: 100px;
   box-shadow: 5px 5px 20px #000;
   margin-bottom: 50px;
+  @include desktop-1146 () {
+    margin-top: 25px;
+  }
+  @include desktop-878 () {
+    width: 300px;
+  }
+  @include desktop-494 () {
+    width: 200px;
+      }
 }
 
 .flecha {
   width: 300px;
   height: 300px;
+  @include desktop-1146() {
+    display: none;
+  }
 }
 
 .flecha-pequeña {
   height: 200px;
+  @include desktop-1146() {
+    display: none;
+  }
 }
 
 .iconoflecha {
@@ -83,6 +121,9 @@ hr {
   left: 93.5%;
   margin: 20px;
   transition: 0.3s ease;
+  @include desktop-878 () {
+    width: 30px;
+  }
 }
 
 .iconoflecha:hover {

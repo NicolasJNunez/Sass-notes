@@ -8,10 +8,16 @@
 .header__title {
   color: rgb(213, 113, 154);
   text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  @include desktop-1146 () {
+    font-size: 2rem;
+  }
 }
 
 .header__imagen {
   width: 300px;
+  @include desktop-1146 () {
+    width: 150px;
+  }
 }
 
 .header__nav {
@@ -26,6 +32,16 @@
   box-shadow: 1px 1px 3px rgb(0, 0, 0);
   text-shadow: 0.5px 0.5px 1px #000;
   transition: 0.3s ease;
+  @include desktop-1146 () {
+    top: 35px;
+  }
+  @include desktop-674 () {
+    right: 30px;
+  }
+  @include desktop-494 () {
+    right: 10px;
+    padding: 0.5em;
+  }
 }
 
 .header__nav:hover {

@@ -13,7 +13,7 @@
 <body>
 
   <header class="header" id="logo">
-
+    
     <div class="header__contenedor">
       <h1 class="header__title">SASS notes</h1>
       <div class="header__contenedor-imagen">
@@ -28,174 +28,244 @@
         </ul>
       </nav>
     </a>
-
+    
   </header>
-
-
+  
+  
   <main>
-
+    
     <section class="seccion">
-
+      
       <h2 class="seccion__titulo">Introduction:</h2>
-
+      
       <article class="seccion__articulo">
-
+        
         <h3 class="seccion__articulo-titulo">¿What is SASS?</h3>
-
+        
         <p class="seccion__articulo-parrafo">SASS is a preprocessor for CSS, which means it extends the capabilities of CSS by providing additional features like variables, nesting of selectors, and functions. It allows us to write more efficient and maintainable CSS code by enabling us to reuse code and write styles in a more organized and structured way.
-
+          
           SASS is not a framework or a library like Bootstrap, which provide pre-written code to help speed up development. Rather, SASS is a tool that helps us improve our workflow and makes it easier to manage complex projects. It allows us to write CSS code in a way that is more modular and scalable, which is especially useful when working with large projects that require a lot of styling.
           
           One of the key features of SASS is its support for nesting of selectors. This means we can write CSS rules that are nested inside other rules, making our code easier to read and understand. SASS also supports functions, which allow us to define reusable pieces of code that can be used throughout our stylesheet.
           
           The benefits of using SASS are numerous. It can help us write cleaner and more efficient CSS code, which in turn makes it easier to maintain and update our projects. It also allows us to organize our styles into separate files, which makes it easier to manage large projects. Overall, SASS is a valuable tool for developers who want to write better CSS code and improve their workflow.</p>
-
+          
         <p class="seccion__articulo-parrafo">SASS uses a file format that is not recognized by web browsers, so we need to compile it to standard CSS code. The compilation process involves using a SASS compiler to convert the SCSS syntax into CSS. This extra step provides benefits like reducing the amount of code we need to write and making it easier to organize our styles for larger projects.</p>
-
+          
       </article>
-
+      
     </section>
-
+    
     <section class="seccion seccion--contigua">
-
+      
       <h2 class="seccion__titulo">How to install:</h2>
-
+      
       <article class="seccion__articulo">
-
+        
         <h3 class="seccion__articulo-titulo">Considerations</h3>
-
+        
         <p class="seccion__articulo-parrafo">We will have to install SASS using NPM (Node Package Manager). Throughout the project, we will work with code packages. NPM is a library from which we can download these external packages and use their tools. It can also track which packages we use. Sass is one of these tools, as well as Bootstrap. To download these code packages, we must enter different series of commands in the terminal. Where can we find these commands? On the official NPM website.</p>
-
+        
         <div class="contenedor-flecha-imagen">
           <img src="./img/flecha.png" alt="flecha" class="flecha">
           <img src="./img/comandos-npm.png" alt="imagen-comando-npm" class="imagen">
         </div>
-
+        
       </article>
-
-
-
+      
+      
+      
     </section>
-
+    
 <div>
-
+  
     <section class="seccion seccion--contigua">
-
+      
       <h2 class="seccion__titulo">Node js</h2>
-
+      
       <article class="seccion__articulo">
-
+        
         <h3 class="seccion__articulo-titulo seccion__articulo-titulo--contiguo">What do we mean when we talk about Node.js?</h3>
-
+        
         <p class="seccion__articulo-parrafo">Basically, it is a runtime environment for JavaScript that allows us to execute its code on the server side. NPM (Node Package Manager) is included within its installation. Node.js has a vast library of modules available through NPM, enabling powerful server-side functionality and streamlining package management.</p>
-
+        
       </article>
-
+      
       <article class="seccion__articulo">
-
+        
         <h3 class="seccion__articulo-titulo seccion__articulo-titulo--contiguo">How do we incorporate sass in  our project?</h3>
-
+        
         <p class="seccion__articulo-parrafo">After installing Node.js, we will open the console in Visual Studio Code and type the following code: <span style="font-weight: bold;">"npm install -g sass"</span>. (The "g" means it will be a global installation). It is installed once and the process will not have to be repeated again.</p>
-
+        
         <p class="seccion__articulo-parrafo">When you are working on a project and you decide to convert CSS styles to Sass, it is important to keep in mind that Sass is a CSS preprocessor, which means that the Sass code needs to be compiled into a valid CSS file that can be interpreted by the web browser.
-
+          
           During the conversion, the Sass file will overwrite the existing CSS file, which means that if you make a mistake or are not satisfied with the results, you will lose all the changes made to the original CSS file.
           
           To avoid this problem, it is a good practice to make a copy of the original CSS file before starting to work with Sass. This way, you will have a backup copy in case something goes wrong during the conversion process.
           
           Once you have made a backup of the CSS file, you can start working on the Sass file and compile it to produce a new and improved CSS file.</p>
-
+          
           <p class="seccion__articulo-parrafo">We have two types of files available for writing the sass code. On one side SCSS and on the other SASS. For those who are new to Sass, it is recommended to use the SCSS syntax as it closely resembles the way CSS code is written, including the use of semicolons and braces. This can help make the transition from CSS to Sass much smoother and easier to understand. </p>
-
+          
           <hr style="margin: 50px 0;">
-
+          
           <p class="seccion__articulo-parrafo">Now, what we need to do is create a folder called "scss" and then add a file called "main.scss" to it, which is the main sass file. This file will serve as the entry point for compiling SASS into CSS.</p>
-
+          
           <div class="contenedor-flecha-imagen">
             <img src="./img/flecha.png" alt="flecha" class="flecha">
             <img src="./img/carpeta-y-main-scss.png" alt="imagen-carpeta-main-scss" class="imagen-pequeña">
           </div>
-
+          
           <p class="seccion__articulo-parrafo">To compile our SCSS code into CSS, we need to initialize Sass by executing a command in the console that takes into account our current location. This location is highlighted in yellow on the console. Next, we need to link the SCSS file to the CSS file by running the command <span style="font-weight: bold;">"sass --watch scss/main.scss css/styles.css"</span>. This tells Sass to continually monitor any changes to our code and compile them into CSS automatically. By doing this, we can work more efficiently and see our changes reflected in the final product in real-time.</p>
-
+          
           <div class="contenedor-flecha-imagen">
             <img src="./img/flecha.png" alt="flecha" class="flecha">
             <img src="./img/ejecutando-comando--watch.png" alt="imagen--watch" class="imagen">
           </div>
-
+          
           <p class="seccion__articulo-parrafo">We have a tool in the terminal which allows us to have multiple terminals. This is very useful to simultaneously use the git terminal. We can also change the names of the terminals</p>
-
+          
           <div class="contenedor-flecha-imagen">
             <img src="./img/flecha.png" alt="flecha" class="flecha">
-            <img src="./img/more-terminals.png" alt="imagen-terminal" style="height: 400px; margin-top: 70px; box-shadow: 5px 5px 20px #000;">
+            <img src="./img/more-terminals.png" alt="imagen-terminal" class="imagen">
           </div>
-
+          
           <h3 class="seccion__articulo-titulo seccion__articulo-titulo--contiguo" style="text-decoration: underline;">Selector nesting</h3>
-
+          
           <p class="seccion__articulo-parrafo">We should consistently produce code that is optimized for readability, comprehension, and efficient resource utilization. Selector nesting is a feature in SASS that allows developers to write nested selectors for better organization and specificity in CSS, reducing code repetition and increasing maintainability.</p>
           
           <div class="contenedor-flecha-imagen">
             <img src="./img/flecha.png" alt="flecha" class="flecha">
             <img src="./img/working-with-scss.png" alt="imagen-working-with-scss" class="imagen">
           </div>
-
+          
           <h3 class="seccion__articulo-titulo seccion__articulo-titulo--contiguo" style="text-decoration: underline;">Ampersand "&"</h3>
-
+          
           <p class="seccion__articulo-parrafo">This selector calls the parent container and it also needs to be inside of it. It works pretty well if we combine it with the BEM methodology. It can optimize our code if we use it like this</p>
-
+          
           <div class="contenedor-flecha-imagen">
             <img src="./img/flecha.png" alt="flecha" class="flecha-pequeña">
-            <img src="./img/ampersand.png" alt="ampersand" style="height: 200px; margin-top: 70px; box-shadow: 5px 5px 20px #000;">
+            <img src="./img/ampersand.png" alt="ampersand" class="imagen" style="height: 200px; margin-top: 70px; box-shadow: 5px 5px 20px #000;">
           </div>
-
+          
           <div class="contenedor-flecha-imagen">
             <img src="./img/flecha.png" alt="flecha" class="flecha-pequeña">
             <img src="./img/ampersand-bem.png" alt="ampersand-bem" class="imagen-pequeña">
           </div>
-
+          
           <h3 class="seccion__articulo-titulo seccion__articulo-titulo--contiguo" style="text-decoration: underline;">Variable</h3>
-
+          
           <p class="seccion__articulo-parrafo">A variable in programming is a storage unit for data that can be altered during program execution. It helps in storing both temporary and permanent values. For instance, in web development, variables can be used to hold color values, which can then be easily used across different sections of a website. If a client requests a color change, it's much simpler to modify the value of the variable than to manually change each instance of the color in the code. This approach speeds up customization and makes the process more efficient. Inside the variables we can store: Colors, typography, numbers.</p>
-
+          
           <div class="contenedor-flecha-imagen">
             <img src="./img/flecha.png" alt="flecha" class="flecha">
             <img src="./img/variable.png" alt="imagen-variable" class="imagen">
           </div>
-
+          
           <div style="display:flex; justify-content: center">
             <p class="seccion__articulo-parrafo" style="width: 325px;">Other types of variables could be:</p>
           </div>
-
+          
           <div class="contenedor-flecha-imagen">
             <img src="./img/flecha.png" alt="flecha" class="flecha-pequeña">
             <img src="./img/other-variables.png" alt="variables" class="imagen-pequeña">
           </div>
-
+          
           <h3 class="seccion__articulo-titulo seccion__articulo-titulo--contiguo" style="text-decoration: underline;">Partials</h3>
-
+          
           <p class="seccion__articulo-parrafo">In Sass, partials are files that start with an underscore "_" character and are used to store reusable chunks of code that can be imported into other Sass files.
-
+            
             Partial files are not compiled into standalone CSS files on their own, but rather they are meant to be imported into other Sass files using the @import directive. When a Sass file is imported, Sass checks to see if the file name starts with an underscore, and if it does, it assumes that the file is a partial and will not generate a CSS file for it.
             
             Using partials in Sass can help modularize and organize your code, making it easier to maintain and update. It also helps reduce duplication of code across multiple files, by allowing you to import the same partial file into multiple Sass files.</p>
-
+            
             <div class="contenedor-flecha-imagen">
               <img src="./img/flecha.png" alt="flecha" class="flecha-pequeña">
             <figure>
               <video class="imagen" controls src="./videos/video-partials.mp4"></video>
             </figure>
             </div>
+
+            <h3 class="seccion__articulo-titulo seccion__articulo-titulo--contiguo" style="text-decoration: underline;">Extends</h3>
+
+            <p class="seccion__articulo-parrafo">What can we do with them? They can extend the styles that a class has to another one. Also, Sass recognizes the BEM methodology and help developers to write more organized, modular, and scalable CSS code.</p>
+
+            <div class="contenedor-flecha-imagen">
+              <img src="./img/flecha.png" alt="flecha" class="flecha-pequeña">
+              <img src="./img/extend.png" alt="extends" class="imagen">
+            </div>
+
+            <h3 class="seccion__articulo-titulo seccion__articulo-titulo--contiguo" style="text-decoration: underline;">Mixins</h3>
+
+            <p class="seccion__articulo-parrafo">This rule only exists in Sass, it does not exist in CSS. Thanks to mixins, in the future we can have a stylesheet with all the predefined styles that we want, making it easier to tackle and execute a new project more efficiently.</p>
+
+            <div class="contenedor-flecha-imagen">
+              <img src="./img/flecha.png" alt="flecha" class="flecha-pequeña">
+              <img src="./img/mixin.png" alt="mixins" class="imagen">
+            </div>
+
+            <h3 class="seccion__articulo-titulo seccion__articulo-titulo--contiguo" style="text-decoration: underline;">Mixins using Arguments</h3>
+
+            <p class="seccion__articulo-parrafo">We will use the structure of a function (tipically used in the world of programming). If we use mixins in this way, we can have parameters that can be customizable. It's like if we were using variables. The 'variables' we create in a mixin with arguments are ONLY used in the context of that mixin.</p>
+
+            <div class="contenedor-flecha-imagen">
+              <img src="./img/flecha.png" alt="flecha" class="flecha-pequeña">
+              <img src="./img/mixins-with-arguments.png" alt="mixins-with-arguments" class="imagen">
+            </div>
+
+            <div class="contenedor-flecha-imagen">
+              <p class="seccion__articulo-parrafo" style="width: fit-content">We can use more than 2 arguments in our mixing, like this:</p> 
+            </div>
+
+            <div class="contenedor-flecha-imagen">
+              <img src="./img/flecha.png" alt="flecha" class="flecha-pequeña">
+              <img src="./img/argumento-3.png" alt="mixins-with-arguments-3" class="imagen-pequeña">
+            </div>
+
+            <div class="contenedor-flecha-imagen">
+              <p class="seccion__articulo-parrafo" style="width: fit-content">We can also set default values in case we don't fill in any values for the arguments.</p> 
+            </div>
+
+            <div class="contenedor-flecha-imagen">
+              <img src="./img/flecha.png" alt="flecha" class="flecha-pequeña">
+              <img src="./img/argumentos-default.png" alt="mixins-with-arguments-default" class="imagen-pequeña">
+            </div>
+
+            <div>
+              <p class="seccion__articulo-parrafo" style="width: fit-content">This is another interesting aplication of this tool</p> 
+            </div>
+
+            <div class="contenedor-flecha-imagen">
+              <img src="./img/flecha.png" alt="flecha" class="flecha-pequeña">
+              <img src="./img/mixin-defecto-asignado.png" alt="mixins-with-arguments-default-and-asigned" class="imagen">
+            </div>
+
+            
+            <h3 class="seccion__articulo-titulo seccion__articulo-titulo--contiguo" style="text-decoration: underline;">Media Queries with Mixins</h3>
+
+            <div>
+              <p class="seccion__articulo-parrafo" style="width: fit-content">We can use this property for more than one element calling them by their class in the SCSS. We just have to do what is told in the next image:</p> 
+            </div>
+
+            <div class="contenedor-flecha-imagen">
+              <img src="./img/flecha.png" alt="flecha" class="flecha-pequeña">
+              <img src="./img/mixins-media-queries.png" alt="mixins-with-media-queries" class="imagen">
+            </div>
+
+            <div>
+              <p class="seccion__articulo-parrafo" style="width: fit-content">This tool is excellent if we have a sheet with all the media query mixins that we want to apply in a new project and then copy and paste them to save a lot of work.</p> 
+            </div>
             
       </article>
-
-
+      
+      
     </section>
-
+    
     <a href="#logo" class="container-flecha"><img src="./img/flechitaparaarriba.png" class="iconoflecha"
       alt="iconoflecha"></a>
-
+      
     </div>
-
+    
   </main>
 
 

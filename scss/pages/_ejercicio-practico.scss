@@ -1,12 +1,12 @@
 .proyectos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  @include flex-center();
   padding: 5em;
-  gap: 20px;
+  gap: 50px;
 
   &__title {
     text-decoration: underline;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 2rem;
   }
 }
