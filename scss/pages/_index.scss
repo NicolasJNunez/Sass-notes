@@ -1,12 +1,17 @@
 .seccion {
   padding: 75px 200px;
-  color: rgb(213, 113, 154);
   @include desktop-878 () {
     padding: 75px 50px;
   }
   @include desktop-494 () {
     padding: 50px 25px;
       }
+
+      // Usando condicional con funcion lightness
+
+  @if lightness($color-blanco)>50 {
+    color: $color-primario;
+  }
 }
 
 .seccion__titulo {

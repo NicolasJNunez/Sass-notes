@@ -197,7 +197,7 @@
 
             <h3 class="seccion__articulo-titulo seccion__articulo-titulo--contiguo" style="text-decoration: underline;">Mixins</h3>
 
-            <p class="seccion__articulo-parrafo">This rule only exists in Sass, it does not exist in CSS. Thanks to mixins, in the future we can have a stylesheet with all the predefined styles that we want, making it easier to tackle and execute a new project more efficiently.</p>
+            <p class="seccion__articulo-parrafo">This rule only exists in Sass, it does not exist in CSS. Thanks to mixins, in the future we can have a stylesheet with all the predefined styles that we want, making it easier to tackle and execute a new project more efficiently. We can reutilize mixins</p>
 
             <div class="contenedor-flecha-imagen">
               <img src="./img/flecha.png" alt="flecha" class="flecha-pequeña">
@@ -255,7 +255,58 @@
             <div>
               <p class="seccion__articulo-parrafo" style="width: fit-content">This tool is excellent if we have a sheet with all the media query mixins that we want to apply in a new project and then copy and paste them to save a lot of work.</p> 
             </div>
+
+            <h3 class="seccion__articulo-titulo seccion__articulo-titulo--contiguo" style="text-decoration: underline;">Conditional if</h3>
+
+            <p class="seccion__articulo-parrafo">The "if" statement in Sass allows you to create more dynamic and flexible styles by providing a way to apply different styles based on different conditions. For example, you can use the "if" statement to apply different font sizes or colors depending on the value of a variable, or to apply styles only if certain conditions are met, such as the presence of a certain class or attribute. The "if" statement can help you write more efficient and maintainable code, making it a powerful tool in your Sass toolbox. The "else if" conditional in Sass allows you to chain multiple conditional statements together, each with its own condition and set of styles. The "else" conditional in Sass allows you to define a fallback style to apply when the condition in an "if" or an "else if" statement is false.</p>
+
+            <div class="contenedor-flecha-imagen">
+              <img src="./img/flecha.png" alt="flecha" class="flecha-pequeña">
+              <img src="./img/conditionals.png" alt="conditionals" class="imagen">
+            </div>
             
+            <p class="seccion__articulo-parrafo">In this conditional, we will use a Sass built-in function called 'lightness'. This function evaluates the luminosity of a color. Take a look at what happens in this example to understand its functionality.</p>
+
+            <div class="contenedor-flecha-imagen">
+              <img src="./img/flecha.png" alt="flecha" class="flecha-pequeña">
+              <img src="./img/lightness.png" alt="lightness" class="imagen">
+            </div>
+
+            <h3 class="seccion__articulo-titulo seccion__articulo-titulo--contiguo" style="text-decoration: underline;">Combining mixins with the conditional that uses lightness</h3>
+
+            <div class="contenedor-flecha-imagen">
+              <img src="./img/flecha.png" alt="flecha" class="flecha-pequeña">
+              <img src="./img/mixin-luminosity-variable.png" alt="lightness-variable-mixin" class="imagen">
+            </div>
+
+            <h3 class="seccion__articulo-titulo seccion__articulo-titulo--contiguo" style="text-decoration: underline;">Maps</h3>
+
+            <p class="seccion__articulo-parrafo">With this tool we can store multiple values inside a variable. These secondary variables that we store inside the main one will always have a key and a value, a key and a value, and so on. We can do this with typography, colors, numerical values, for shadows, different values for different breakpoints, etc. Pay atention to the caller inside de declaration <strong>map-get($example-main, "example-econdary");</strong></p>
+
+            <div class="contenedor-flecha-imagen">
+              <img src="./img/flecha.png" alt="flecha" class="flecha-pequeña">
+              <img src="./img/maps.png" alt="maps" class="imagen">
+            </div>
+
+            <h3 class="seccion__articulo-titulo seccion__articulo-titulo--contiguo" style="text-decoration: underline;">Each</h3>
+
+            <p class="seccion__articulo-parrafo">Basically, the function "Each" is a loop where there is a variable that will take values from a list and based on that, it will print different elements. In this case, this tool uses the <span>$var</span> variable. We must keep in mind that it only works inside the "each" loop. Bootstrap uses this functionalities</p>
+
+            <div class="contenedor-flecha-imagen">
+              <img src="./img/flecha.png" alt="flecha" class="flecha-pequeña">
+              <img src="./img/each.png" alt="each" class="imagen">
+            </div>
+
+            <p class="seccion__articulo-parrafo">
+              In the following example, we have a loop that, instead of iterating based on a list that we wrote, will iterate based on a map. Also, we have to keep in mind that before we had declared a single variable after the @each command, which was $var. Now we will declare two variables: $key and $value. The first variable called $key will take the lines (in order) of the "keys" (twitter, facebook, youtube) in the loop, while the "value" variable will also take (in order) the lines of the "values" (light blue, blue, red). The number of times it will iterate will be based on the number of variables in the map. If there are 3, it will iterate 3 times. If there are 4, it will iterate 4 times. Basically, we create a loop that prints based on the assigned map and generates different classes for elements (in this case, buttons).
+            </p>
+
+            <div class="contenedor-flecha-imagen">
+              <img src="./img/flecha.png" alt="flecha" class="flecha-pequeña">
+              <img src="./img/each-con-maps.png" alt="each-with-maps" class="imagen">
+            </div>
+
+
       </article>
       
       

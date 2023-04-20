@@ -57,7 +57,7 @@ hr {
   border: 1px solid rgb(168, 195, 225);
 }
 .btn--inactivo {
-  background-color: #000000;
+  background-color: black;
 }
 
 .card {
